@@ -4,8 +4,6 @@ wire sum,barrow;
   half_sub dut(.a(a),.b(b),.sum(sum),.borrow(borrow));
 initial
 begin
-   $dumpfile("dump.vcd");
-   $dumpvars;
   a=0;b=0;
   #20;
   a=0;b=1;
